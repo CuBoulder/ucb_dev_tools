@@ -1,0 +1,5 @@
+name: CU Boulder Dev Tools
+type: module
+description: Collection of tools and functionality for local development within Web Express.
+package: Custom
+core_version_requirement: ^10 || ^11

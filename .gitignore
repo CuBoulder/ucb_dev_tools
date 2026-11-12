@@ -1,0 +1,12 @@
+# Standalone Drupal module (not a full site checkout).
+.DS_Store
+*.log
+*.swp
+*~
+
+# If Composer tooling is added to this repo later:
+vendor/
+
+# Optional IDE / OS noise
+.idea/*
+.vscode/*

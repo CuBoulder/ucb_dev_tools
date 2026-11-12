@@ -1,0 +1,7 @@
+name: CU Boulder Dev Localized Links
+type: module
+description: Localizes absolute path links when synced to a Pantheon site.
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - ucb_dev_tools:ucb_dev_tools

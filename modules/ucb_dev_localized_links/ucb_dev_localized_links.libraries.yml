@@ -1,0 +1,7 @@
+link_localization:
+  version: 1.0
+  js:
+    js/localize-links.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

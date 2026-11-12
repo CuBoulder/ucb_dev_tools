@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for UCB Dev Localized Links submodule of UCB Dev Tools.
+ */
+
+/**
+ * Attaches library for link localization of absolute paths for synced Pantheon site.
+ * 
+ * Implements hook_page_attachments().
+ */
+function ucb_dev_localized_links_page_attachments(array &$attachments): void {
+  $masking = \Drupal::config('pantheon_domain_masking.settings');
+
+  // Localization requires a subpath to localize from
+  // TODO: account for syncing to the homepage which doesn't have a subpath (if possible??)
+  if ($site_path = $masking->get('subpath') ?: false) {
+    $attachments['#attached']['library'][] = 'ucb_dev_localized_links/link_localization';
+    $attachments['#attached']['drupalSettings']['ucb_dev_localized_links']['site_path'] = $site_path;
+  }
+}
