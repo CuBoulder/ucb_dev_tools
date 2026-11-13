@@ -1,5 +1,5 @@
 {
     "name": "cu-boulder/ucb_dev_tools",
     "description": "Collection of tools and functionality for local development within Web Express",
-    "type": "dupal-custom-module"
+    "type": "drupal-custom-module"
 }
